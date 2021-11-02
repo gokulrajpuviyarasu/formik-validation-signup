@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import rocketImage from './asset/rocket.png';
+import { Singup } from './components/Singup';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className="container mt-3">
+     <div className="row">
+        <div className="col-md-5">
+        <Singup/>
+          </div>
+          <div className="col-md-7">
+            <img className="img-fluid w-80" src={rocketImage} alt=""/>
+            </div>
+       </div>
+       </div>
   );
 }
 
